@@ -1,0 +1,10 @@
+@font-face {
+    font-family: Sketch;
+    src: url("Sketch.ttf");
+} main {
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+} h1 {
+    font-family: Sketch;
+}
