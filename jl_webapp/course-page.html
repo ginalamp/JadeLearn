@@ -1,0 +1,20 @@
+<!-- JadeLearn: Course page load course database -->
+<html>
+    <head>
+        <script src="scripts/jquery-3.1.1.min.js" type="text/javascript"></script>
+        
+        <!-- jQuery code to load the display course cgi script -->
+        <script>
+            $(function(){
+                $("#display_course_here").load("display_course.cgi");
+            });
+        </script>
+    </head>
+    
+    <body> 
+        <main>
+            <!-- The table displaying course in database go here -->
+            <div id="display_course_here"></div>
+        </main>
+    </body>
+</html>
