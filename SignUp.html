@@ -1,0 +1,288 @@
+
+<html>
+ <header>
+ 
+<title>JadeLearn: SignUp</title>
+  <style>
+
+  /* styling for my bodys background-color */
+    body{
+      background-color:#eeeeee;
+	  margin: 0;
+
+   }
+
+   .header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+ /* styling for my navbar */
+   ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	  background-color: #333;
+    position:-webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    padding:14px 16px;
+	  text-align:center;
+	  color:white;
+    text-decoration: none;
+  }
+
+
+
+  /*styling for the hero image*/
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url("home2.jpg");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+
+
+/*Styling for an image with transparent text*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+
+/* Styling for the signup page*/
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password], select {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, select
+ {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+
+  /* Styling for the footer*/
+  footer{
+     background-color:#333;
+     text-align: center;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+  }
+
+
+
+
+  </style>
+ </header>
+ 
+ <body>
+ 
+   <div class="header">
+   <img src="logo.png" alt="SmartWatch Logo">
+  </div>
+
+
+<div class="hero-image">
+ <ul>
+    <li><a href="Contact.html">Contact</a></li>
+	<li><a href="Gallery.html">Gallery</a></li>
+	<li><a href="About.html">About</a></li>
+	<li style="background-color:orange;"><a href= "Home.html">Home</a></li>
+  </ul>
+
+</div>
+
+<form method="post" action="user_data.cgi" style="border:1px solid #ccc">
+  <div class="container">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+	<label for="name"><b> First Name </b><label>
+	<input type="text" placeholder="Enter Name" name="name" required> 
+	
+	<label for="surname"><b> Last Name </b><label>
+	<input type="text" placeholder="Enter Lastame" name="surname" required> 
+	
+     <label for="age"><b>Age </b><label>
+	<input type="text" placeholder="Enter Age" name="age" required> 
+	
+	
+	<label for="sex"><b> Sex </b><label>
+    <select id="sex" name="sex">
+	  <option value="sex">Sex...</option>
+      <option value="female">Female</option>
+      <option value="male">Male</option>
+      <option value="other">Other</option>
+    </select>
+	
+	
+	
+	<label for="Race"><b> Race </b><label>
+    <select id="race" name="Race">
+	  <option value="race">Race...</option>
+      <option value="black">Black</option>
+      <option value="white">White</option>
+      <option value="coloured">Coloured</option>
+	  <option value="indian">Indian/Asian</option>
+	  <option value="other">Other</option>
+    </select>
+	
+	<label for="province"><b> Province </b><label>
+	 <select id="province" name="province">
+	  <option value="province">Province...</option>
+      <option value="EasternCape">Eastern Cape</option>
+      <option value="FreeState">Free State</option>
+      <option value="Gauteng">Gauteng</option>
+	  <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+	  <option value="Limpopo">Limpopo</option>
+	  <option value="Mpumalanga">Mpumalanga</option>
+      <option value="northernCape">Northern Cape</option>
+      <option value="northWest">North West</option>
+	  <option value="WesternCape">Western Cape</option>
+	  <option value="other">Other</option>
+    </select>
+	
+	
+	<label for="grade"><b> Grade </b><label>
+	 <select id="gr" name="grade">
+	  <option value="gr">Grade...</option>
+      <option value="gr10">Grade 10</option>
+      <option value="gr11">Grade 11</option>
+      <option value="gr12">Grade 12</option>
+    </select>
+	
+	
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label> 
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw_repeat" required>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn" ><a href="Grading.html"> Sign Up</button>
+    </div>
+  </div>
+</form>
+
+
+ 
+ </body>
+ 
+ 
+ 
+ <footer>
+
+  <h2 style="color:white;"> This is the footer</h2>
+
+</footer>
+
+</html>

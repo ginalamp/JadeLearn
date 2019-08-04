@@ -1,0 +1,578 @@
+
+<html>
+ <header>
+<title>JadeLearn: GradesPage</title>
+  <style>
+
+  /* styling for my bodys background-color */
+    body{
+      background-color:#eeeeee;
+	  margin: 0;
+
+   }
+
+   .header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+ /* styling for my navbar */
+   ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	  background-color: #333;
+    position:-webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    padding:14px 16px;
+	  text-align:center;
+	  color:white;
+    text-decoration: none;
+  }
+
+
+
+  /*styling for the hero image*/
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url("home2.jpg");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+
+
+/*Styling for an image with transparent text*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+
+/* Styling for the tables*/
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Styling for the button*/
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: right;
+}
+
+.button4 {border-radius: 12px;}
+
+
+  /* Styling for the footer*/
+  footer{
+     background-color:#333;
+     text-align: center;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+  }
+
+
+
+
+  </style>
+ </header>
+
+<body>
+
+  <div class="header">
+   <img src="logo.png" alt="SmartWatch Logo">
+  </div>
+
+
+<div class="hero-image">
+ <ul>
+    <li><a href="Contact.html">Contact</a></li>
+	<li><a href="Gallery.html">Gallery</a></li>
+	<li><a href="About.html">About</a></li>
+	<li style="background-color:orange;"><a href= "Home.html">Home</a></li>
+  </ul>
+
+</div>
+
+<h1 style="text-align:center;">This is the Grading page</h1>
+
+<h2 style="text-align:center;">Please Add in your current marks.</h2>
+
+<table id="customers">
+  <tr>
+    <th>Subject</th>
+    <th>Marks</th>
+	<th>Goal Marks</th>
+  </tr>
+  <tr>
+    <td>
+    <label for="subject1"><label>
+    <select id="sub1" name="sub1">
+	  <option value="subject1">Subject 1...</option>
+      <option value="subject1">Maths</option>
+      <option value="subject1">English First Language</option>
+      <option value="subject1">Afrikaans First Additional Language</option>
+	  <option value="subject1">Life Orientation</option>
+      <option value="subject1">Physical Sciences</option>
+      <option value="subject1">Life Sciences</option>
+      <option value="subject1">Accounting</option>
+	  <option value="subject1">Business</option>
+      <option value="subject1">Information Technology</option>
+      <option value="subject1">Consumers Studies</option>
+      <option value="subject1">IsiXhosa First Additional Language</option>
+    </select>
+	</td>
+    <td>
+	 <label for="Mark1"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="mark1" required>
+	</td>
+	<td>
+     <label for="name"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="gmark1" required>
+	</td>
+  </tr>
+  
+  <tr>
+    <td>
+	 <label for="subject2"><label>
+    <select id="sub2" name="sub2">
+	  <option value="subject1">Subject 2...</option>
+      <option value="subject1">Maths</option>
+      <option value="subject1">English First Language</option>
+      <option value="subject1">Afrikaans First Additional Language</option>
+	  <option value="subject1">Life Orientation</option>
+      <option value="subject1">Physical Sciences</option>
+      <option value="subject1">Life Sciences</option>
+      <option value="subject1">Accounting</option>
+	  <option value="subject1">Business</option>
+      <option value="subject1">Information Technology</option>
+      <option value="subject1">Consumers Studies</option>
+      <option value="subject1">IsiXhosa First Additional Language</option>
+    </select>
+	</td>
+    <td>
+	 <label for="name"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="mark2" required>
+	</td>
+    <td>
+     <label for="name"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="gmark2" required>
+	</td>
+    
+  </tr>
+  <tr>
+    <td>
+	 <label for="subject3"><label>
+    <select id="sub3" name="sub3">
+	  <option value="subject1">Subject 3...</option>
+      <option value="subject1">Maths</option>
+      <option value="subject1">English First Language</option>
+      <option value="subject1">Afrikaans First Additional Language</option>
+	  <option value="subject1">Life Orientation</option>
+      <option value="subject1">Physical Sciences</option>
+      <option value="subject1">Life Sciences</option>
+      <option value="subject1">Accounting</option>
+	  <option value="subject1">Business</option>
+      <option value="subject1">Information Technology</option>
+      <option value="subject1">Consumers Studies</option>
+      <option value="subject1">IsiXhosa First Additional Language</option>
+    </select>
+	</td>
+    <td>
+	 <label for="name"><b></b><label>
+	 <input type="sub2" placeholder="Enter Mark" name="mark3" required>
+	</td>
+    <td>
+     <label for="name"><b></b><label>
+	 <input type="sub3" placeholder="Enter Mark" name="gmark3" required>
+	</td>
+	
+  </tr>
+  <tr>
+    <td>
+	 <label for="subject4"><label>
+    <select id="sub4" name="sub4">
+	  <option value="subject1">Subject 4...</option>
+      <option value="subject1">Maths</option>
+      <option value="subject1">English First Language</option>
+      <option value="subject1">Afrikaans First Additional Language</option>
+	  <option value="subject1">Life Orientation</option>
+      <option value="subject1">Physical Sciences</option>
+      <option value="subject1">Life Sciences</option>
+      <option value="subject1">Accounting</option>
+	  <option value="subject1">Business</option>
+      <option value="subject1">Information Technology</option>
+      <option value="subject1">Consumers Studies</option>
+      <option value="subject1">IsiXhosa First Additional Language</option>
+    </select>
+	</td>
+    <td>
+	 <label for="name"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="mark4" required>
+	</td>
+    <td>
+     <label for="name"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="gmark4" required>
+	</td>
+	
+  </tr>
+  
+  <tr>
+    <td>
+	 <label for="subject5"><label>
+    <select id="sub5" name="sub5">
+	  <option value="subject1">Subject 5...</option>
+      <option value="subject1">Maths</option>
+      <option value="subject1">English First Language</option>
+      <option value="subject1">Afrikaans First Additional Language</option>
+	  <option value="subject1">Life Orientation</option>
+      <option value="subject1">Physical Sciences</option>
+      <option value="subject1">Life Sciences</option>
+      <option value="subject1">Accounting</option>
+	  <option value="subject1">Business</option>
+      <option value="subject1">Information Technology</option>
+      <option value="subject1">Consumers Studies</option>
+      <option value="subject1">IsiXhosa First Additional Language</option>
+    </select>
+	</td>
+    <td>
+	 <label for="name"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="mark5" required>
+	</td>
+	<td>
+     <label for="name"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="gmark5" required>
+	</td>
+    
+  </tr>
+  <tr>
+    <td>
+	 <label for="subject6"><label>
+    <select id="sub6" name="sub6">
+	  <option value="subject1">Subject 6...</option>
+      <option value="subject1">Maths</option>
+      <option value="subject1">English First Language</option>
+      <option value="subject1">Afrikaans First Additional Language</option>
+	  <option value="subject1">Life Orientation</option>
+      <option value="subject1">Physical Sciences</option>
+      <option value="subject1">Life Sciences</option>
+      <option value="subject1">Accounting</option>
+	  <option value="subject1">Business</option>
+      <option value="subject1">Information Technology</option>
+      <option value="subject1">Consumers Studies</option>
+      <option value="subject1">IsiXhosa First Additional Language</option>
+    </select>
+	</td>
+    <td>
+     <label for="name"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="mark6" required>	
+	</td>
+	<td>
+     <label for="name"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="gmark6" required>
+	</td>
+    
+  </tr>
+  <tr>
+    <td>
+	 <label for="subject7"><label>
+    <select id="sub7" name="sub7">
+	  <option value="subject1">Subject 7...</option>
+      <option value="subject1">Maths</option>
+      <option value="subject1">English First Language</option>
+      <option value="subject1">Afrikaans First Additional Language</option>
+	  <option value="subject1">Life Orientation</option>
+      <option value="subject1">Physical Sciences</option>
+      <option value="subject1">Life Sciences</option>
+      <option value="subject1">Accounting</option>
+	  <option value="subject1">Business</option>
+      <option value="subject1">Information Technology</option>
+      <option value="subject1">Consumers Studies</option>
+      <option value="subject1">IsiXhosa First Additional Language</option>
+    </select>
+	</td>
+    <td>
+	 <label for="mark"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="mark7" required>
+	</td>
+	<td>
+     <label for="Gmark"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="gmark7" required>
+	</td>
+    
+  </tr>
+
+</table>
+
+<!--
+
+<h2 style="text-align:center;">Now, lets add your goal marks for the up coming term</h2>
+
+
+<table id="customers">
+  <tr>
+    <th>Subject</th>
+    <th>Marks</th>
+  </tr>
+  <tr>
+    <td>
+	<label for="subject1"><label>
+    <select id="sex" name="sex">
+	  <option value="subject1">Subject 1...</option>
+      <option value="subject1">Maths</option>
+      <option value="subject1">English First Language</option>
+      <option value="subject1">Afrikaans First Additional Language</option>
+	  <option value="subject1">Life Orientation</option>
+      <option value="subject1">Physical Sciences</option>
+      <option value="subject1">Life Sciences</option>
+      <option value="subject1">Accounting</option>
+	  <option value="subject1">Business</option>
+      <option value="subject1">Information Technology</option>
+      <option value="subject1">Consumers Studies</option>
+      <option value="subject1">IsiXhosa First Additional Language</option>
+    </select>
+	</td>
+    <td>
+	 <label for="name"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="name" required>
+	</td>
+    
+  </tr>
+  <tr>
+    <td>
+	 <label for="subject1"><label>
+    <select id="sex" name="sex">
+	  <option value="subject1">Subject 2...</option>
+      <option value="subject1">Maths</option>
+      <option value="subject1">English First Language</option>
+      <option value="subject1">Afrikaans First Additional Language</option>
+	  <option value="subject1">Life Orientation</option>
+      <option value="subject1">Physical Sciences</option>
+      <option value="subject1">Life Sciences</option>
+      <option value="subject1">Accounting</option>
+	  <option value="subject1">Business</option>
+      <option value="subject1">Information Technology</option>
+      <option value="subject1">Consumers Studies</option>
+      <option value="subject1">IsiXhosa First Additional Language</option>
+    </select>
+	</td>
+    <td>
+	 <label for="name"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="name" required>
+	</td>
+    
+  </tr>
+  <tr>
+    <td>
+	 <label for="subject1"><label>
+    <select id="sex" name="sex">
+	  <option value="subject1">Subject 3...</option>
+      <option value="subject1">Maths</option>
+      <option value="subject1">English First Language</option>
+      <option value="subject1">Afrikaans First Additional Language</option>
+	  <option value="subject1">Life Orientation</option>
+      <option value="subject1">Physical Sciences</option>
+      <option value="subject1">Life Sciences</option>
+      <option value="subject1">Accounting</option>
+	  <option value="subject1">Business</option>
+      <option value="subject1">Information Technology</option>
+      <option value="subject1">Consumers Studies</option>
+      <option value="subject1">IsiXhosa First Additional Language</option>
+    </select>
+	</td>
+    <td>
+	 <label for="name"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="name" required>
+	</td>
+    
+  </tr>
+  <tr>
+    <td>
+	 <label for="subject1"><label>
+    <select id="sex" name="sex">
+	  <option value="subject1">Subject 4...</option>
+      <option value="subject1">Maths</option>
+      <option value="subject1">English First Language</option>
+      <option value="subject1">Afrikaans First Additional Language</option>
+	  <option value="subject1">Life Orientation</option>
+      <option value="subject1">Physical Sciences</option>
+      <option value="subject1">Life Sciences</option>
+      <option value="subject1">Accounting</option>
+	  <option value="subject1">Business</option>
+      <option value="subject1">Information Technology</option>
+      <option value="subject1">Consumers Studies</option>
+      <option value="subject1">IsiXhosa First Additional Language</option>
+    </select>
+	</td>
+    <td>
+	 <label for="name"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="name" required>
+	</td>
+    
+  </tr>
+  <tr>
+    <td>
+	 <label for="subject1"><label>
+    <select id="sex" name="sex">
+	  <option value="subject1">Subject 5...</option>
+      <option value="subject1">Maths</option>
+      <option value="subject1">English First Language</option>
+      <option value="subject1">Afrikaans First Additional Language</option>
+	  <option value="subject1">Life Orientation</option>
+      <option value="subject1">Physical Sciences</option>
+      <option value="subject1">Life Sciences</option>
+      <option value="subject1">Accounting</option>
+	  <option value="subject1">Business</option>
+      <option value="subject1">Information Technology</option>
+      <option value="subject1">Consumers Studies</option>
+      <option value="subject1">IsiXhosa First Additional Language</option>
+    </select>
+	</td>
+    <td>
+	 <label for="name"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="name" required>
+	</td>
+    
+  </tr>
+  <tr>
+    <td>
+	 <label for="subject1"><label>
+    <select id="sex" name="sex">
+	  <option value="subject1">Subject 6...</option>
+      <option value="subject1">Maths</option>
+      <option value="subject1">English First Language</option>
+      <option value="subject1">Afrikaans First Additional Language</option>
+	  <option value="subject1">Life Orientation</option>
+      <option value="subject1">Physical Sciences</option>
+      <option value="subject1">Life Sciences</option>
+      <option value="subject1">Accounting</option>
+	  <option value="subject1">Business</option>
+      <option value="subject1">Information Technology</option>
+      <option value="subject1">Consumers Studies</option>
+      <option value="subject1">IsiXhosa First Additional Language</option>
+    </select>
+	</td>
+    <td>
+	 <label for="name"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="name" required>
+	</td>
+    
+  </tr>
+  <tr>
+    <td>
+	 <label for="subject1"><label>
+    <select id="sex" name="sex">
+	  <option value="subject1">Subject 7...</option>
+      <option value="subject1">Maths</option>
+      <option value="subject1">English First Language</option>
+      <option value="subject1">Afrikaans First Additional Language</option>
+	  <option value="subject1">Life Orientation</option>
+      <option value="subject1">Physical Sciences</option>
+      <option value="subject1">Life Sciences</option>
+      <option value="subject1">Accounting</option>
+	  <option value="subject1">Business</option>
+      <option value="subject1">Information Technology</option>
+      <option value="subject1">Consumers Studies</option>
+      <option value="subject1">IsiXhosa First Additional Language</option>
+    </select>
+	</td>
+    <td>	
+	 <label for="name"><b></b><label>
+	 <input type="text" placeholder="Enter Mark" name="name" required>
+	</td>
+    
+  </tr>
+
+</table>
+-->
+
+<br>
+<br>
+
+ <button class="button button4"><a href="Interests.html">NEXT</button>
+
+<br>
+<br>
+</body>
+
+<br>
+<br>
+
+
+
+<footer>
+
+  <h2 style="color:white;"> This is the footer</h2>
+
+</footer>
+
+
+
+
+
+</html>
+

@@ -1,3 +1,4 @@
+# Collects user data and outputs it to a user.txt file
 # user_data.cgi
 
 import cgi
